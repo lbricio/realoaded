@@ -6,7 +6,7 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 17:35:15 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/08/28 17:35:55 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/08/28 17:58:38 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,9 +69,6 @@ int	main(int argc, char **argv)
 	ft_sort(argc, argv);
 	i = 1;
 	while (i < argc)
-	{
-		ft_putstr(argv[i]);
-		i++;
-	}
+		ft_putstr(argv[i++]);
 	return (0);
 }
