@@ -6,7 +6,7 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 17:35:15 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/08/28 17:58:38 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/08/28 18:10:25 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,8 @@ void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-		ft_putchar(str[i++]);
+	while (*str)
+		ft_putchar(*str++);
 	ft_putchar('\n');
 }
 
