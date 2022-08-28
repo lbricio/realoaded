@@ -6,7 +6,7 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 11:14:13 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/08/28 13:27:37 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/08/28 15:20:47 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		ft_putchar(str[i]);
 		str[i++] = ASCII_CLEAR;
@@ -59,7 +59,7 @@ int	main(int argc, char **argv)
 
 	i = 1;
 	while (i++ < argc)
-		ft_putstr(
-			ft_get_minor_arg(argc, argv));
+		ft_putstr
+			(ft_get_minor_arg(argc, argv));
 	return (0);
 }
