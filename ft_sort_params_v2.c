@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params_v2.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/28 17:35:15 by lbricio-          #+#    #+#             */
+/*   Updated: 2022/08/28 17:35:55 by lbricio-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
 void	ft_putchar(char c);
@@ -22,9 +34,9 @@ int	ft_strcmp(char *s1, char signal, char *s2)
 	return (0);
 }
 
-void ft_swap(char **s1, char **s2)
+void	ft_swap(char **s1, char **s2)
 {
-	char *strtmp;
+	char	*strtmp;
 
 	strtmp = *s1;
 	*s1 = *s2;
@@ -34,7 +46,7 @@ void ft_swap(char **s1, char **s2)
 void	ft_sort(int argc, char **argv)
 {
 	int	ascend;
-	int descend;
+	int	descend;
 
 	ascend = 1;
 	while (ascend < argc)
@@ -52,11 +64,11 @@ void	ft_sort(int argc, char **argv)
 
 int	main(int argc, char **argv)
 {	
-	int i;
+	int	i;
 
 	ft_sort(argc, argv);
 	i = 1;
-	while(i < argc)
+	while (i < argc)
 	{
 		ft_putstr(argv[i]);
 		i++;
